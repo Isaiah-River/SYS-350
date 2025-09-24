@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah River - SYS-350</title>
+    <style>
+        /* Background gradient with a minty/celadon color scheme */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #1A3C34; /* Deep greenish teal for text */
+            background: linear-gradient(to top, #C1E1C1, #A8D5BA, #DFF6D8);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Container for the scene */
+        .scene {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50vh;
+        }
+
+        /* Mountain layers - minty shades */
+        .mountain {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: #4A7C59; /* Darkest mountain */
+            clip-path: polygon(40% 20%, 100% 100%, 0% 100%);
+        }
+
+        .mountain:nth-child(2) {
+            background: #5F8F6F; /* Middle shade */
+            clip-path: polygon(20% 30%, 80% 100%, 0% 100%);
+        }
+
+        .mountain:nth-child(3) {
+            background: #76A088; /* Lighter foreground */
+            clip-path: polygon(60% 35%, 100% 100%, 30% 100%);
+        }
+
+        /* Text styling */
+        .text-container {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5em;
+            font-style: italic;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-container">
+        <h1>Isaiah River</h1>
+        <p>SEC-350</p>
+    </div>
+
+    <div class="scene">
+        <div class="mountain"></div>
+        <div class="mountain"></div>
+        <div class="mountain"></div>
+    </div>
+
+</body>
+</html>
